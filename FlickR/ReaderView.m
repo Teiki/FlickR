@@ -26,18 +26,48 @@
     return self;
 }
 
--(void)displayPageAtIndex:(int)index
+-(void)displayPageAtIndex:(int)index animated:(BOOL)animated
 {
     if (index >=0 && index < [self.delegate numberOfPages])
     {
-        //Récupérer la vue auprés du delegate
-        UIView * view = [self.delegate pageAtIndex:index];
-        
-        //Supprimer les anciennes vues, ne fait rien si il n'y en a pas
-        [self.subviews.lastObject removeFromSuperview];
-        
-        //Ajouter la vue en tant que sous-vue
-        [self addSubview:view];
+        if (!animated) {
+            //Récupérer la vue auprés du delegate
+            UIView * view = [self.delegate pageAtIndex:index];
+            
+            //Supprimer les anciennes vues, ne fait rien si il n'y en a pas
+            [self.subviews.lastObject removeFromSuperview];
+            
+            //Ajouter la vue en tant que sous-vue
+            [self addSubview:view];
+        }
+        else
+        {
+            UIView * oldView = self.subviews.lastObject;
+            UIView * newView = [self.delegate pageAtIndex:index];
+            [self addSubview:newView];
+            CGPoint center = newView.center;
+            CGPoint left = CGPointMake(center.x - self.bounds.size.width, center.y);
+            CGPoint right = CGPointMake(center.x + self.bounds.size.width, center.y);
+            if (index < self.currentIndex) {
+                newView.center = left;
+                [UIView animateWithDuration:1 animations:^{
+                    newView.center = center;
+                    oldView.center = right;
+                } completion:^(BOOL finished) {
+                    [oldView removeFromSuperview];
+                }];
+            }
+            else
+            {
+                newView.center = right;
+                [UIView animateWithDuration:1 animations:^{
+                    newView.center = center;
+                    oldView.center = left;
+                } completion:^(BOOL finished) {
+                    [oldView removeFromSuperview];
+                }];
+            }
+        }
         self.currentIndex = index;
     }
 }
@@ -62,12 +92,12 @@
 
 - (void) previousPage
 {
-    [self displayPageAtIndex:self.currentIndex-1];
+    [self displayPageAtIndex:self.currentIndex-1 animated:YES];
 }
 
 - (void) nextPage
 {
-    [self displayPageAtIndex:self.currentIndex+1];
+    [self displayPageAtIndex:self.currentIndex+1 animated:YES];
 }
 
 /*

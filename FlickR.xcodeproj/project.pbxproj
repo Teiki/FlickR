@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A28151A19111D9100531D6B /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28151919111D9100531D6B /* FlickRPicture.m */; };
 		0A94854318F68620005E79AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854218F68620005E79AB /* Foundation.framework */; };
 		0A94854518F68620005E79AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854418F68620005E79AB /* CoreGraphics.framework */; };
 		0A94854718F68620005E79AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854618F68620005E79AB /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A28151819111D9100531D6B /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
+		0A28151919111D9100531D6B /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
 		0A94853F18F68620005E79AB /* FlickR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94854218F68620005E79AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A94854418F68620005E79AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				0A94857A18F68EA3005E79AB /* PictureViewController.m */,
 				0A94857C18F68ECE005E79AB /* ReaderView.h */,
 				0A94857D18F68ECE005E79AB /* ReaderView.m */,
+				0A28151819111D9100531D6B /* FlickRPicture.h */,
+				0A28151919111D9100531D6B /* FlickRPicture.m */,
 				0A94858B18F6A1D0005E79AB /* 0.jpg */,
 				0A94858118F696F4005E79AB /* 1.jpg */,
 				0A94858718F69D37005E79AB /* 2.jpg */,
@@ -281,6 +286,7 @@
 				0A94855818F68620005E79AB /* FlickR.xcdatamodeld in Sources */,
 				0A94857B18F68EA3005E79AB /* PictureViewController.m in Sources */,
 				0A94855518F68620005E79AB /* AppDelegate.m in Sources */,
+				0A28151A19111D9100531D6B /* FlickRPicture.m in Sources */,
 				0A94857E18F68ECE005E79AB /* ReaderView.m in Sources */,
 				0A94855118F68620005E79AB /* main.m in Sources */,
 			);
@@ -481,6 +487,7 @@
 				0A94857318F68620005E79AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A94857418F68620005E79AB /* Build configuration list for PBXNativeTarget "FlickRTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				0A94857618F68620005E79AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

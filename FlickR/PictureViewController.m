@@ -36,7 +36,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.readerView displayPageAtIndex:0];
+    [self.readerView displayPageAtIndex:0 animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
