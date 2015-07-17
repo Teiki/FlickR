@@ -74,6 +74,9 @@
 
 -(void)layoutSubviews
 {
+    [super layoutSubviews];
+    [self.subviews.lastObject setFrame:self.bounds];
+    
     if (!self.gestureRecognizers.count)
     {
         UISwipeGestureRecognizer * previousPageRecognizer =

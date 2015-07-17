@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A28151A19111D9100531D6B /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28151919111D9100531D6B /* FlickRPicture.m */; };
+		0A8C930F1926076800120718 /* FlickR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C930D1926076800120718 /* FlickR.xcdatamodeld */; };
+		0A8C93121926089500120718 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C93111926089500120718 /* City.m */; };
+		0A8C93151926099000120718 /* City+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C93141926099000120718 /* City+CRUD.m */; };
+		0A8C93181926182D00120718 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C93171926182D00120718 /* CityViewController.m */; };
+		0A8C935F192624A400120718 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C935E192624A400120718 /* MapViewController.m */; };
 		0A94854318F68620005E79AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854218F68620005E79AB /* Foundation.framework */; };
 		0A94854518F68620005E79AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854418F68620005E79AB /* CoreGraphics.framework */; };
 		0A94854718F68620005E79AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854618F68620005E79AB /* UIKit.framework */; };
@@ -15,7 +20,6 @@
 		0A94854F18F68620005E79AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A94854D18F68620005E79AB /* InfoPlist.strings */; };
 		0A94855118F68620005E79AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A94855018F68620005E79AB /* main.m */; };
 		0A94855518F68620005E79AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A94855418F68620005E79AB /* AppDelegate.m */; };
-		0A94855818F68620005E79AB /* FlickR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A94855618F68620005E79AB /* FlickR.xcdatamodeld */; };
 		0A94855A18F68620005E79AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A94855918F68620005E79AB /* Images.xcassets */; };
 		0A94856118F68620005E79AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94856018F68620005E79AB /* XCTest.framework */; };
 		0A94856218F68620005E79AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A94854218F68620005E79AB /* Foundation.framework */; };
@@ -30,6 +34,7 @@
 		0A94858918F69D37005E79AB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A94858718F69D37005E79AB /* 2.jpg */; };
 		0A94858A18F69D37005E79AB /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A94858818F69D37005E79AB /* 3.jpg */; };
 		0A94858C18F6A1D0005E79AB /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A94858B18F6A1D0005E79AB /* 0.jpg */; };
+		0AE3EFA319349A17008FBC0C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE3EFA219349A17008FBC0C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,15 @@
 /* Begin PBXFileReference section */
 		0A28151819111D9100531D6B /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
 		0A28151919111D9100531D6B /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
+		0A8C930E1926076800120718 /* FlickR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickR.xcdatamodel; sourceTree = "<group>"; };
+		0A8C93101926089500120718 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		0A8C93111926089500120718 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		0A8C93131926099000120718 /* City+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "City+CRUD.h"; sourceTree = "<group>"; };
+		0A8C93141926099000120718 /* City+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+CRUD.m"; sourceTree = "<group>"; };
+		0A8C93161926182D00120718 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		0A8C93171926182D00120718 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		0A8C935D192624A400120718 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0A8C935E192624A400120718 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A94853F18F68620005E79AB /* FlickR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94854218F68620005E79AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A94854418F68620005E79AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +70,6 @@
 		0A94855218F68620005E79AB /* FlickR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickR-Prefix.pch"; sourceTree = "<group>"; };
 		0A94855318F68620005E79AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A94855418F68620005E79AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A94855718F68620005E79AB /* FlickR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickR.xcdatamodel; sourceTree = "<group>"; };
 		0A94855918F68620005E79AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A94855F18F68620005E79AB /* FlickRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A94856018F68620005E79AB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -72,6 +85,7 @@
 		0A94858718F69D37005E79AB /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		0A94858818F69D37005E79AB /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		0A94858B18F6A1D0005E79AB /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0.jpg; path = ../0.jpg; sourceTree = "<group>"; };
+		0AE3EFA219349A17008FBC0C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE3EFA319349A17008FBC0C /* MapKit.framework in Frameworks */,
 				0A94854518F68620005E79AB /* CoreGraphics.framework in Frameworks */,
 				0A94854918F68620005E79AB /* CoreData.framework in Frameworks */,
 				0A94854718F68620005E79AB /* UIKit.framework in Frameworks */,
@@ -122,6 +137,7 @@
 		0A94854118F68620005E79AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AE3EFA219349A17008FBC0C /* MapKit.framework */,
 				0A94854218F68620005E79AB /* Foundation.framework */,
 				0A94854418F68620005E79AB /* CoreGraphics.framework */,
 				0A94854618F68620005E79AB /* UIKit.framework */,
@@ -134,21 +150,29 @@
 		0A94854A18F68620005E79AB /* FlickR */ = {
 			isa = PBXGroup;
 			children = (
-				0A94855318F68620005E79AB /* AppDelegate.h */,
-				0A94855418F68620005E79AB /* AppDelegate.m */,
-				0A94857718F68711005E79AB /* Storyboard.storyboard */,
-				0A94857918F68EA3005E79AB /* PictureViewController.h */,
-				0A94857A18F68EA3005E79AB /* PictureViewController.m */,
-				0A94857C18F68ECE005E79AB /* ReaderView.h */,
-				0A94857D18F68ECE005E79AB /* ReaderView.m */,
-				0A28151819111D9100531D6B /* FlickRPicture.h */,
-				0A28151919111D9100531D6B /* FlickRPicture.m */,
 				0A94858B18F6A1D0005E79AB /* 0.jpg */,
 				0A94858118F696F4005E79AB /* 1.jpg */,
 				0A94858718F69D37005E79AB /* 2.jpg */,
 				0A94858818F69D37005E79AB /* 3.jpg */,
+				0A94855318F68620005E79AB /* AppDelegate.h */,
+				0A94855418F68620005E79AB /* AppDelegate.m */,
+				0A8C93131926099000120718 /* City+CRUD.h */,
+				0A8C93141926099000120718 /* City+CRUD.m */,
+				0A8C93101926089500120718 /* City.h */,
+				0A8C93111926089500120718 /* City.m */,
+				0A8C93161926182D00120718 /* CityViewController.h */,
+				0A8C93171926182D00120718 /* CityViewController.m */,
+				0A8C930D1926076800120718 /* FlickR.xcdatamodeld */,
+				0A28151819111D9100531D6B /* FlickRPicture.h */,
+				0A28151919111D9100531D6B /* FlickRPicture.m */,
 				0A94855918F68620005E79AB /* Images.xcassets */,
-				0A94855618F68620005E79AB /* FlickR.xcdatamodeld */,
+				0A8C935D192624A400120718 /* MapViewController.h */,
+				0A8C935E192624A400120718 /* MapViewController.m */,
+				0A94857918F68EA3005E79AB /* PictureViewController.h */,
+				0A94857A18F68EA3005E79AB /* PictureViewController.m */,
+				0A94857C18F68ECE005E79AB /* ReaderView.h */,
+				0A94857D18F68ECE005E79AB /* ReaderView.m */,
+				0A94857718F68711005E79AB /* Storyboard.storyboard */,
 				0A94854B18F68620005E79AB /* Supporting Files */,
 			);
 			path = FlickR;
@@ -283,11 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A94855818F68620005E79AB /* FlickR.xcdatamodeld in Sources */,
+				0A8C93151926099000120718 /* City+CRUD.m in Sources */,
+				0A8C930F1926076800120718 /* FlickR.xcdatamodeld in Sources */,
 				0A94857B18F68EA3005E79AB /* PictureViewController.m in Sources */,
 				0A94855518F68620005E79AB /* AppDelegate.m in Sources */,
 				0A28151A19111D9100531D6B /* FlickRPicture.m in Sources */,
 				0A94857E18F68ECE005E79AB /* ReaderView.m in Sources */,
+				0A8C93181926182D00120718 /* CityViewController.m in Sources */,
+				0A8C935F192624A400120718 /* MapViewController.m in Sources */,
+				0A8C93121926089500120718 /* City.m in Sources */,
 				0A94855118F68620005E79AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,12 +529,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0A94855618F68620005E79AB /* FlickR.xcdatamodeld */ = {
+		0A8C930D1926076800120718 /* FlickR.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0A94855718F68620005E79AB /* FlickR.xcdatamodel */,
+				0A8C930E1926076800120718 /* FlickR.xcdatamodel */,
 			);
-			currentVersion = 0A94855718F68620005E79AB /* FlickR.xcdatamodel */;
+			currentVersion = 0A8C930E1926076800120718 /* FlickR.xcdatamodel */;
 			path = FlickR.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
